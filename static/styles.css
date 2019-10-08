@@ -1,0 +1,122 @@
+body{
+    background-color: white;
+}
+
+.body-top {
+  padding-top: 240px;
+
+}
+
+.body-bottom {
+  padding-top: 60px;
+
+}
+
+.header {
+  background-image: url('http://www.up-downbikes.it/images/Cool-Designs-HD-Wallpaper.jpg');
+  background-size: cover;
+  padding-top: 100px;
+
+}
+.header-top {
+  background-image: url('http://www.up-downbikes.it/images/Cool-Designs-HD-Wallpaper.jpg');
+  background-size: cover;
+  padding-top: 100px;
+
+}
+
+.header-bottom{
+  background-image: url('http://www.up-downbikes.it/images/Cool-Designs-HD-Wallpaper.jpg');
+  background-size: cover;
+  padding-top: 100px;
+  margin-bottom: 30px;
+
+}
+
+.header-text {
+  margin-bottom: 0px;
+  color: white;
+
+}
+
+button.a {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding: 12px 20px;
+}
+
+p.otstup{
+    padding-top: 15px;
+}
+
+footer {
+  background: #dddee1;
+  padding: 5vh 0;
+  text-align: center;
+  position: relative;
+}
+
+small {
+  opacity: .5;
+  font-weight: 300;
+
+  a {
+    color: inherit;
+  }
+}
+ /* For Contact Section*/
+#map{
+
+  height:650px;
+  width:100%;
+  position:relative;
+  overflow:hidden;
+
+}
+
+
+.contact-form-area{
+  position:absolute;
+  bottom:40px;
+  background:rgba(0, 0, 0, 0.6);
+  padding:30px;
+  width:85%;
+  border:1px solid #cdcaca;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  margin-bottom:30px;
+  -ms-border-radius:5px;
+  box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+  -webkit-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+  -moz-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+  -ms-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
+
+}
+.contact-form-area form h3{
+  font-size:36px;
+  color:#fff;
+  font-family: 'latobold';
+  margin-bottom:20px;
+}
+.form-control {
+  height: 35px;
+  border: none;
+}
+.contact-form-area form .contact-btn{
+  background: #dcdcdc;
+  padding: 10px 70px;
+  color: #000000;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact-form-area form .contact-btn:hover{
+  background:#fff;
+}

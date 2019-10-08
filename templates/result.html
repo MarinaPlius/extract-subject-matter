@@ -1,0 +1,72 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+    <title>Extract Subject Matter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/css/header.css" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
+    </head>
+    <body class="body-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	  <div class="header-top">
+	    <div class="container">
+	      <h1 class="header-text">Extract Subject Matter</h1>
+	    </div>
+	  </div>
+	  <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="/about"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+            <li><a href="/contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <p>Key words: {% for item in key_words %}
+        <span > {{ item }} </span>
+          {% endfor %}.
+        </p>
+        <p>Text subject: {{ subject }} </p>
+        <p>Facts: {% for fact in facts %}
+        <span ><br>   - {{ fact }}. </span>
+          {% endfor %}
+        </p>
+     <form method="get" action="/">
+      <button type="submit">Repeat with another text</button>
+    </form>
+<pre>
+  {{ text }}
+</pre>
+
+      </div>
+    </div>
+    <footer>
+        <p>ESM Project</p>
+        <small>🕷 <a href="/policy">Privacy Policy</a>.</small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>
