@@ -11,7 +11,8 @@ cymem==2.0.2
 cytoolz==0.9.0.1
 decorator==4.4.0
 dill==0.2.9
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
+spacy>=2.2.0,<3.0.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#egg=en_core_web_sm
 Flask==1.1.1
 gunicorn==19.9.0
 idna==2.8
