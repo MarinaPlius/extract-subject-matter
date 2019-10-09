@@ -6,7 +6,8 @@ from nltk import tokenize, FreqDist, pos_tag, ne_chunk, tree
 #import nltk
 #from trigram_tagger import SubjectTrigramTagger
 import spacy
-import textacy.extract
+#import textacy.extract
+import semistructured_statements
 
 #download stop word list
 file = open("stopwords.txt", "r")
@@ -122,7 +123,8 @@ def subject(text, keywords):
 def extract_facts(text, subject):
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
-    statements = textacy.extract.semistructured_statements(doc, subject)
+    #statements = textacy.extract.semistructured_statements(doc, subject)
+    statements = semistructured_statements.semistructured_statements(doc, subject)
     facts = []
     for statement in statements:
         subject, verb, fact = statement
