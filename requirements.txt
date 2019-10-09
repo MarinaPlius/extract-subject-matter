@@ -12,7 +12,7 @@ cymem==1.31.2
 cytoolz==0.9.0.1
 decorator==4.4.0
 dill==0.2.8.2
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
+en-core-web-sm==2.0.0
 Flask==1.1.1
 ftfy==4.4.2
 html5lib==1.0.1
@@ -28,6 +28,7 @@ msgpack-numpy==0.4.4.3
 murmurhash==0.28.0
 networkx==2.3
 nltk==3.3
+numpy==1.14.2
 plac==0.9.6
 preshed==1.0.1
 pycparser==2.19
