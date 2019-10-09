@@ -10,6 +10,7 @@ cytoolz==0.9.0.1
 dill==0.2.9
 https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
 Flask==1.1.1
+gunicorn==19.9.0
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.3
