@@ -38,10 +38,10 @@ def menu():
             #find the most frequent words   
             key_words = help_functions.freq_words(text_clean)
             key_words_up = [word.upper() for word in key_words]
-            try:
-                subject, subject_short = help_functions.subject(text_clean, key_words)
-            except:
-                return render_template("result.html", key_words=key_words_up, subject="no subject", facts=["no facts"], text=text)
+            #try:
+            subject, subject_short = help_functions.subject(text_clean, key_words)
+            #except:
+            #    return render_template("result.html", key_words=key_words_up, subject="no subject", facts=["no facts"], text=text)
             #extract facts with spacy
             #facts = help_functions.extract_facts(text, subject)
             facts = []
