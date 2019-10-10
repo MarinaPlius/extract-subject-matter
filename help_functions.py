@@ -9,7 +9,6 @@ import spacy
 #import textacy.extract
 import semistructured_statements
 
-nltk.data.path.append('nltk_data/')
 
 #download stop word list
 file = open("stopwords.txt", "r")
