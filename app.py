@@ -43,7 +43,8 @@ def menu():
             except:
                 return render_template("result.html", key_words=key_words_up, subject="no subject", facts=["no facts"], text=text)
             #extract facts with spacy
-            facts = help_functions.extract_facts(text, subject)
+            #facts = help_functions.extract_facts(text, subject)
+            facts = []
             if facts == []:
                 return render_template("result.html", key_words=key_words_up, subject=subject.capitalize(), facts=["no facts"], text=text)
             #return the result of extracting

@@ -5,9 +5,9 @@ from nltk import tokenize, FreqDist, pos_tag, ne_chunk, tree
 #import pickle
 #import nltk
 #from trigram_tagger import SubjectTrigramTagger
-import spacy
+#import spacy
 #import textacy.extract
-import semistructured_statements
+#import semistructured_statements
 
 
 #download stop word list
@@ -121,7 +121,7 @@ def subject(text, keywords):
     phrase = []
     return svos """
 
-def extract_facts(text, subject):
+"""def extract_facts(text, subject):
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
     #statements = textacy.extract.semistructured_statements(doc, subject)
@@ -131,7 +131,7 @@ def extract_facts(text, subject):
         subject, verb, fact = statement
         facts.append((str(fact)).strip())
     facts = list(set(facts))
-    return facts
+    return facts"""
 
 
 
