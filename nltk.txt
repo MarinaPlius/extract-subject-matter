@@ -1,3 +1,5 @@
 punkt
 averaged_perceptron_tagger
 universal_tagset
+maxent_treebank_pos
+maxent_ne_chunker
