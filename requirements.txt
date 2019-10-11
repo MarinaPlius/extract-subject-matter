@@ -8,7 +8,6 @@ cryptography==2.7
 cymem==2.0.2
 cytoolz==0.9.0.1
 dill==0.2.9
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-2.0.0/en_core_web_md-2.0.0.tar.gz
 Flask==1.1.1
 gunicorn==19.9.0
 idna==2.8
@@ -31,7 +30,6 @@ regex==2019.8.19
 requests==2.22.0
 six==1.12.0
 soupsieve==1.9.3
-spacy==2.0.16
 thinc==6.12.1
 toolz==0.10.0
 tqdm==4.36.1
